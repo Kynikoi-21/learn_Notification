@@ -1,3 +1,9 @@
 spring:
   application:
     name: learn_Notification
+SMS:
+  apiUrl: https://www.bilibili.com/
+  enable: true
+  timeout: 1000
+  supported-currencies: RMB,USD,PZT
+
