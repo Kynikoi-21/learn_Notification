@@ -10,7 +10,7 @@ public class NotificationManager {
     private final NotificationService notificationService;
 
 
-    public NotificationManager(@Qualifier("SMS") NotificationService notificationService){
+    public NotificationManager(NotificationService notificationService){
         this.notificationService = notificationService;
         System.out.println("NotificationManager is created");
     }
