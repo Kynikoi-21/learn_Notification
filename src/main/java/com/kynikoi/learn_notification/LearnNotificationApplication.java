@@ -10,8 +10,9 @@ public class LearnNotificationApplication {
     public static void main(String[] args) {
 
         ApplicationContext context= SpringApplication.run(LearnNotificationApplication.class, args);
-        var notificationManager=context.getBean(NotificationManager.class);
-        notificationManager.sendNotification("EmailNotificationService");
+        var notificationManager = context.getBean(NotificationManager.class);
+        var notificationManager2 = context.getBean(NotificationManager.class);
+        notificationManager2.sendNotification("EmailNotificationService");
     }
 
 
